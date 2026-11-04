@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC FLORENTIN BAZIBUHE- Animation d'Événements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">MC FLORENTIN BAZIBUHE</div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reservation" class="btn-reserver">Réserver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <h1>Mettez de l'ambiance dans vos événements !</h1>
+        <p>MC Florentin, votre maître de cérémonie professionnel pour mariages, anniversaires, conférences et soirées
+            privées.</p>
+        <a href="#reservation" class="btn-principal">Faire une réservation</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Ce que je fais</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <h3>🎤 Mariages & Galas</h3>
+                <p>Une animation élégante et dynamique pour rendre votre jour J inoubliable.</p>
+            </div>
+            <div class="service-box">
+                <h3>💼 Événements d'Entreprise</h3>
+                <p>Présentation professionnelle pour vos conférences et lancements de produits.</p>
+            </div>
+            <div class="service-box">
+                <h3>🎉 Fêtes Privées</h3>
+                <p>Anniversaires, soirées... L'ambiance est garantie avec une interaction totale avec le public.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+        <h2>Réservez votre date en ligne</h2>
+        <p>Remplissez ce formulaire et je vous recontacterai très vite.</p>
+
+        <form id="form-reservation">
+            <div class="form-groupe">
+                <label for="nom">Votre Nom complet :</label>
+                <input type="text" id="nom" required>
+            </div>
+
+            <div class="form-groupe">
+                <label for="telephone">Numéro de téléphone :</label>
+                <input type="tel" id="telephone" required>
+            </div>
+
+            <div class="form-groupe">
+                <label for="date">Date de l'événement :</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-groupe">
+                <label for="type-event">Type d'événement :</label>
+                <select id="type-event" required>
+                    <option value="">Choisissez...</option>
+                    <option value="Mariage">Mariage</option>
+                    <option value="Entreprise">Événement d'entreprise</option>
+                    <option value="Anniversaire">Anniversaire / Fête privée</option>
+                    <option value="Autre">Autre</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-principal">Envoyer ma demande</button>
+            <p id="message-succes" class="cache">Merci ! Votre demande a été envoyée avec succès.</p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MC FLORENTIN. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<section id="accueil" class="hero">
+    <div class="hero-container">
+        <div class="hero-texte">
+            <h1>Mettez de l'ambiance avec <span class="nom-mc">MC FLORENTIN</span></h1>
+            <p>Votre maître de cérémonie professionnel pour mariages, anniversaires et événements d'exception.</p>
+            <a href="#reservation" class="btn-principal">Faire une réservation</a>
+        </div>
+        <div class="hero-image">
+            <img src="1772221449261.jpg" alt="MC FLORENTIN en plein show">
+        </div>
+    </div>
+</section>
+<a href="#reservation" class="btn-principal">Faire une réservation</a>
+
+<section id="avis-section" class="temoignages">
+    <h2>Ils m'ont fait confiance</h2>
+    <div id="liste-temoignages" class="avis">
+        <blockquote>"Une ambiance incroyable pour mon mariage, merci MC Florentin !" - <strong>Sarah & Marc</strong>
+        </blockquote>
+    </div>
+
+    <div class="form-avis">
+        <h3>Vous avez aimé ma prestation ? Laissez un message !</h3>
+        <form id="form-temoignage">
+            <input type="text" id="nom-avis" placeholder="Votre nom" required>
+            <textarea id="texte-avis" placeholder="Votre témoignage ici..." required></textarea>
+            <button type="submit" class="btn-secondaire">Envoyer mon témoignage</button>
+        </form>
+    </div>
+</section>
+
+</html>
